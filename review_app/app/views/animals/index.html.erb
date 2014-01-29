@@ -1,0 +1,18 @@
+<%= @animals.each do |animal| %>
+    <div>
+        <div> <%= animal.nickname %> </div> 
+        <div> <%= animal.status %> </div> 
+        <div>
+            Name: <%= @animal.name %>, Species <%= @animal.species %>
+        </div>
+        <div>
+            Description:<br>
+
+                <p>
+                    <%= @animal.description %>
+                </p>
+        </div>
+
+ </div>
+<% end %>    
+    

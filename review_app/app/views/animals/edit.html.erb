@@ -1,0 +1,20 @@
+<!--   <form action="/animals" method="post">
+    </form>
+ -->
+   <%= form_for @animal do |f|%>
+
+        <%= f.text_field :name, placeholder: "enter name" %> <br>
+      <!-- <input type="text" name="animal[species]" placeholder="enter species"> -->
+        <%= f.text_field :species, placeholder: "enter species" %> <br>
+        <%= f.text_field :nickname, placeholder: "enter nickname" %> <br>
+        <%= f.text_field :age, placeholder: "enter age" %> <br>
+        <div>
+            On Display:  <%= f.radio_button :status, "display" %> <br>
+            On Vaaction: <%= f.radio_button :status, "vaction" %> <br>
+            On Lease:  <%= f.radio_button :status, "lease" %>
+        </div>
+        
+        <%= f.text_area  :description, placeholder: "Describe teh animal" %> <br>
+        
+        <%= f.submit %>
+    <% end %>

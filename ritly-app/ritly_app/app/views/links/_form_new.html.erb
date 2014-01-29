@@ -1,0 +1,6 @@
+<%= form_for @link, action: "/links", class: "form-control" do |f| %>
+  <%= f.text_field :url, placeholder: "enter a url" %>
+  <%= f.text_field :random_string, placeholder: "custom-text" %>
+
+  <%= f.submit class: "btn btn-default" %>
+<% end %>
